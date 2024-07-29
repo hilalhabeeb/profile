@@ -8,6 +8,31 @@
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+    <style>
+        .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    flex: 1 1 45%;
+    margin-bottom: 20px;
+}
+
+.skills-list .additional-skills {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%;
+}
+
+.skills-list .additional-skills div {
+    margin-bottom: 10px;
+}
+
+    </style>
 </head>
 
 <body>
@@ -48,19 +73,22 @@ My expertise spans across various technologies, including Python, C, C++, Java, 
                         <p class="tab-links" onclick="openTab('experience')">Projects</p>
                         <p class="tab-links" onclick="openTab('education')">Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Web app Development</li>
-                            <li><span>App Development</span><br>Building Android/iOS apps</li>
-                            <li><span>Programming Languages</span><br>C, C++, Java, Python (Django), PHP</li>
-                            <li><span>Database Management</span><br>MySQL, MongoDB</li>
-                            <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
-                            <li><span>Testing</span><br>Selenium</li>
-                            <li><span>Dev Tools</span><br>GitHub, VS Code, Figma</li>
-                            <li><span>Additional Technologies</span><br>MS Office (Word, Excel, etc.)</li>
-                        </ul>
-                    </div>
+<div class="tab-contents active-tab" id="skills">
+    <ul class="skills-list">
+        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+        <li><span>Web Development</span><br>Web app Development</li>
+        <li><span>App Development</span><br>Building Android/iOS apps</li>
+        <li><span>Programming Languages</span><br>C, C++, Java, Python (Django), PHP</li>
+        <li><span>Database Management</span><br>MySQL, MongoDB</li>
+        <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+        <li><span>Testing</span><br>Selenium</li>
+        <li class="additional-skills">
+            <div><span>Dev Tools</span><br>GitHub, VS Code, Figma</div>
+            <div><span>Additional Technologies</span><br>MS Office (Word, Excel, etc.)</div>
+        </li>
+    </ul>
+</div>
+
                     
                     <div class="tab-contents" id="experience">
                         <ul>
